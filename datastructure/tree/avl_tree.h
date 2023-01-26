@@ -30,7 +30,6 @@ bst_node *avl_update(bst_node *root, int old_key, int new_key)
 
 bst_node *avl_balance(bst_node *root)
 {
-    bst_update_size_height(root);
     int balance_score = bst_balance_score(root);
     if (balance_score > 1)
     {
